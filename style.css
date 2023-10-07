@@ -21,6 +21,7 @@ html,body{
     padding-top: 15vh;
     padding: 0 1vw;
     padding-top: 19vh;
+    position: relative;
 
 }
 #page1 h1{
@@ -49,18 +50,20 @@ html,body{
    padding: 4vw;
    background-color: black;
    color: #fff;
-   font-size: 2vw;
+   font-size: 1.3vw;
    position: fixed;
    text-transform: uppercase;
    font-family: futura;
    border-radius: 50%;
-   padding: 3vw 2vw;
+   padding: 3vw 2.2vw;
+   scale: 0;
+   opacity: 0;
 }
 
 
 #page2{
-    height: 100vh;
-    width: 100;
+    min-height: 100vh;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -69,13 +72,117 @@ html,body{
 }
 
 #page2 .elem{
-    height: 100%;
+   min-height: 100%;
     width: 31%;
-    background-color: red;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 #page2 .elem img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+ 
+}
+
+ #page2 .elem .dets{
+    height: 40px;
+    width: 70%;
+    position: absolute;
+    border-radius: 50px;
+    z-index: 9;
+  
+    background-color: palegoldenrod;
+
+
+}
+
+#page2 .elem .dets:hover{
+    height: 200px;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.child{
+    height: 55vh;
+    width: 40vw;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+
+@media (max-width:600px) {
+
+    #page1{
+       /* background-color: red; */
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+        min-height: 70vh;
+    
+    }
+
+    #page1 h1{
+        font-size: 15.5vw;
+        
+        letter-spacing: -3px;
+    }
+
+
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+    }
+
+
+    
+#video-container #play{
+    padding: 9.5vw 7.2vw;
+    font-size: 4.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    scale: 1;
+    opacity: 1;
+    transform: translate(-50% ,-50%);
+ }
+ 
+ 
+ #page2{
+    min-height: 100vh;
+    width: 100;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5vw 3vw;
+ 
+}
+
+#page2 .elem{
+   height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    overflow: hidden;
+    margin-bottom: 3vw;
+
+}
+
+
+
 }

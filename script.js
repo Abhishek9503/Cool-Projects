@@ -1,4 +1,7 @@
-
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
 
 function videconAnimation(){
     var videocon =document.querySelector("#video-container")
@@ -22,8 +25,8 @@ videocon.addEventListener("mouseleave",function(){
 
 videocon.addEventListener("mousemove",function(dets){
     gsap.to(playbtn,{
-        left:dets.x-50,
-        top:dets.y-80
+        left:dets.x-60,
+        top:dets.y-90
        })
 })
 }
