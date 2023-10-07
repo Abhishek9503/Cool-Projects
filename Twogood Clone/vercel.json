@@ -1,8 +1,8 @@
-{
+  {
     "name": "Project 1",
     "builds": [
       {
-        "src": "Twogood Clone",
+        "src": "Cool project/Twogood Clone",
         "use": "@vercel/static-build"
       }
     ]
