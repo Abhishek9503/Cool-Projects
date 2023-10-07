@@ -154,7 +154,6 @@ function navbarAnimation(){
         scrollTrigger:{
             trigger:"#page1",
             scroller:"#main",
-            markers:true,
             start:"top 0",
             end:"top -5%",
             scrub:0.5
@@ -170,7 +169,6 @@ function navbarAnimation(){
         scrollTrigger:{
             trigger:"#page1",
             scroller:"#main",
-            markers:true,
             start:"top 0",
             end:"top -5%",
             scrub:1
