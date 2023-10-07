@@ -12,11 +12,23 @@
 html,body{
     height: 100%;
     width: 100%;
+    background-color: #f7f7f7;
+}
+
+#cursor{
+    height: 180px;
+    width: 180px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50% scale(0));
+    /* z-index: 10; */
+
 }
 
 #page1{
     min-height: 100vh;
-    background-color:white;
+    /* background-color:white; */
     width: 100%;
     padding-top: 15vh;
     padding: 0 1vw;
@@ -110,18 +122,29 @@ html,body{
 #page3{
     min-height: 120vh;
     width: 100%;
-    background-color: #f7f7f7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    
 }
 
 .child{
     height: 55vh;
-    width: 40vw;
-    background-color: red;
+    width: 35vw;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 5px;
+}
+
+.child img{
+    height:100% ;
+
 }
 
 
