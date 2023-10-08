@@ -1,0 +1,9 @@
+{
+    "name": "project2",
+    "builds": [
+      {
+        "src": "Cool-Projects/Cuberto Clone",
+        "use": "@vercel/static-build"
+      }
+    ]
+  }
